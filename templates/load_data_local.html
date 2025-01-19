@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block title %}Загрузка видео{% endblock %}
+
+{% block content %}
+    <h1>Загрузите файл в формате mp4</h1>
+<form action="/fetch_data_local" method="post" enctype="multipart/form-data">
+<div class="mb-3">
+  <label for="formFile" class="form-label">Загрузка файла</label>
+  <input class="form-control" type="file" name="video_file" id="formFile">
+</div>
+    </form>
+{% endblock %}
+
+
