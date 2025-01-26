@@ -1,18 +1,22 @@
-import httpx
-from fastapi.responses import HTMLResponse
+from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
-from sqlalchemy import create_engine, text
-from fastapi import FastAPI, Request, UploadFile, File, Query
-from io import BytesIO
-from io import StringIO
+from sqlalchemy import create_engine
+from fastapi import FastAPI, Request, UploadFile, File, Form, status
 
-from detecte_faces.detecte import CascadeHaara
+from models.models import VideoModel
+from logger.my_logger import logger
+import uvicorn
+import re
+import aiofiles
+import httpx
+
 from models.models import VideoModel
 
 
+logger.info("Start logging")
 
 app = FastAPI()
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory="../templates")
 
 # Создание локальной базы данных
 engine = create_engine("sqlite:///example.db", echo=True)
@@ -21,40 +25,54 @@ engine = create_engine("sqlite:///example.db", echo=True)
 async def test(request: Request):
     return templates.TemplateResponse("test.html", {"request": request})
 
-
 @app.get("/main", response_class=HTMLResponse)
 async def main(request: Request):
     return templates.TemplateResponse("main.html", {"request": request})
 
 # -------------------- Загрузка локального файла --------------------
 @app.get("/load_data_local", response_class=HTMLResponse)
-async def load_data_local(request: Request):
-    return templates.TemplateResponse("load_data_local.html", {"request": request})
+async def load_data_local(request: Request, msg: str = None):
+    logger.info('Отображение страницы с формой')
+    return templates.TemplateResponse("load_data_local.html", {
+        "request": request,
+        "info": msg,
+    })
 
 @app.post("/fetch_data_local")
-async def fetch_data_local(video_file: UploadFile = File(...)):
-    try:
-        contents = await video_file.read()
+async def fetch_data_local(request: Request,
+                           file: UploadFile = File(...),
+                           name: str = Form(...),
+                           check_filename: bool = Form(default=False)):
 
-        video = VideoModel(name="test")
+    if check_filename:
+        try:
+            pattern = re.compile('.*\.mp4')
+            if not pattern.search(file.filename):
+                raise ValueError('Необходимо загрузить файл в формате mp4')
+        except Exception as error:
+            logger.error(error)
+            msg="Необходимо загрузить файл mp4"
 
-        print(video.model_dump())
+    # try:
+    #     contents = await data.file.read()
+    #     # Проверка файла на формат mp4
+    #     match = re.fullmatch("\S.mp4", data.file.filename)
+    #     # logger.info(f'загружаемый файл соответсвует mp4 - {match}')
+    #     if not match:
+    #         error = 'Прошу загрузить файл в формате mp4'
+    #         # return RedirectResponse("/load_data_local", 302,  )
+    #         return templates.TemplateResponse("load_data_local.html", {
+    #             "request": request,
+    #             "error": error,
+    #         })
+    #     # df.to_sql("mytable", con=engine, if_exists="replace", index=False)
+    # except Exception as e:
+    #     logger.error(e)
+    # finally:
+    #     await data.file.close()
 
-
-        # df = pd.read_csv(BytesIO(contents))
-        #
-        # df.dropna(inplace=True)
-        # df.drop_duplicates(inplace=True)
-        #
-        # df.to_sql("mytable", con=engine, if_exists="replace", index=False)
-        # return {
-        #     "status": "ok",
-        #     "file_name": file.filename,
-        #     "rows_loaded": len(df),
-        #     "columns": list(df.columns),
-        # }
-    except Exception as e:
-        return {"status": "error", "details": str(e)}
+    redirect_url = request.url_for('load_data_local').include_query_params(msg=msg)
+    return RedirectResponse(redirect_url, status_code=status.HTTP_302_FOUND)
 
 
 
@@ -63,5 +81,6 @@ async def fetch_data_local(video_file: UploadFile = File(...)):
 # test.return_result()
 
 
-
+if __name__== "__main__":
+   uvicorn.run(app, host="127.0.0.1", port=8080)
 
