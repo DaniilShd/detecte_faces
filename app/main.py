@@ -1,8 +1,10 @@
+import uuid
 from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
-from repository.sqlite import db, Person
+from repository.models import Video, Person
+from repository.sqlite import engine
 from sqlalchemy.orm import Session
-from fastapi import FastAPI, Request, UploadFile, File, Form, status, Depends, Response, HTTPException
+from fastapi import FastAPI, Request, UploadFile, File, Form, status, Depends, Response, HTTPException, Cookie
 from fastapi.security import HTTPBasic, HTTPBasicCredentials
 from itsdangerous import URLSafeSerializer
 import numpy as np
@@ -20,52 +22,50 @@ app = FastAPI()
 templates = Jinja2Templates(directory="../templates")
 
 # Сохраняю в переменную данные о пользователей из БД
-users = db.query(Person).all()
+with Session(autoflush=False, bind=engine) as db:
+    users = db.query(Person).all()
 
 # Секретный ключ для подписи cookies
 SECRET_KEY = "your-secret-key"
 serializer = URLSafeSerializer(SECRET_KEY)
 
+lst_tokens=[]  # список токенов пользователей
+
 # Базовый пример аутентификации
 security = HTTPBasic()
 
+@app.get("/", response_class=HTMLResponse)
+async def path_to_login(request: Request):
+    return RedirectResponse('/login', status_code=status.HTTP_302_FOUND)
+
 @app.get("/login", response_class=HTMLResponse)
-async def test(request: Request):
+async def login(request: Request):
     return templates.TemplateResponse("login.html", {"request": request})
 
 @app.post("/login")
 async def login(request: Request, username: str = Form(...), password: str = Form(...) , response: Response = None):
     # Проверяем, существует ли пользователь в базе данных
     for user in users:
-        print(username)
-        print(password)
         if user.login == username and user.password == password:
             # Создаем сессию (подписанный токен)
             session_token = serializer.dumps({"username": username})
             response.set_cookie(key="session_token", value=session_token, httponly=True)
+            lst_tokens.append(session_token)  # добавляем в список новый токен
 
+            # return {"message": "Login successful"}
 
-            return RedirectResponse('/load_data_local', status_code=status.HTTP_302_FOUND)
+            return RedirectResponse('/load_data_local', status_code=status.HTTP_302_FOUND, headers=response.headers)
 
     return templates.TemplateResponse("login.html", {
         "request": request,
         'info': 'Incorrect username or password',
     })
 
-
-
-
-
 # Маршрут для выхода пользователя
 @app.post("/logout")
 async def logout(response: Response):
     response.delete_cookie(key="session_token")
     return {"message": "Logout successful"}
-
-
-@app.get("/test", response_class=HTMLResponse)
-async def test(request: Request):
-    return templates.TemplateResponse("test.html", {"request": request})
 
 @app.get("/main", response_class=HTMLResponse)
 async def main(request: Request):
@@ -83,16 +83,26 @@ async def load_data_local(request: Request, msg: str = None):
 @app.post("/fetch_data_local")
 async def fetch_data_local(request: Request,
                            file: UploadFile = File(...),
-                           check_filename: bool = Form(default=False)):
-
+                           check_filename: bool = Form(default=False),
+                           session_token: str = Cookie(...)):
+    # Расшифровываем токен сессии
+    data = serializer.loads(session_token)
+    username = data["username"]
+    print(username)
 
     if check_filename:
-        try:
-            if not bool(re.search(r"\.mp4", file.filename)):
-                raise ValueError('Необходимо загрузить файл в формате mp4')
-        except Exception as error:
-            redirect_url = request.url_for('load_data_local').include_query_params(msg=error)
-            return RedirectResponse(redirect_url, status_code=status.HTTP_302_FOUND)
+        if file.filename != "":
+            try:
+                if not bool(re.search(r"\.mp4", file.filename)):
+                    raise ValueError('Необходимо загрузить файл в формате mp4')
+            except Exception as error:
+                redirect_url = request.url_for('load_data_local').include_query_params(msg=error)
+                return RedirectResponse(redirect_url, status_code=status.HTTP_302_FOUND)
+        else:
+            return templates.TemplateResponse("load_data_local.html", {
+                "request": request,
+                "info": "Пустой файл",
+            })
 
     try:
         contents = await file.read()
@@ -102,9 +112,21 @@ async def fetch_data_local(request: Request,
         # cv2.imshow("test", im)
         # cv2.waitKey()
 
-        with open('test2.mp4', 'wb') as f:
+        uniq_name_video = f'{uuid.uuid4()}.mp4'
+
+        with open(f'../repository/origin_video/{uniq_name_video}.mp4', 'wb') as f:
             f.write(contents)
 
+
+
+
+        # with Session(autoflush=False, bind=engine) as db:
+        #     # создаем объект Video для добавления в бд
+        #     new_video = Video(video_path_origin=f"/repository/origin_video/{uniq_name_video}.mp4",
+        #                       video_path_detected=f"/repository/detected_video/{uniq_name_video}.mp4",
+        #                       autor=)
+        #     db.add(new_video)  # добавляем в бд
+        #     db.commit()  # сохраняем изменения
 
 
         # cap = cv2.VideoCapture(0)
@@ -163,12 +185,6 @@ async def fetch_data_local(request: Request,
 
     redirect_url = request.url_for('load_data_local').include_query_params(msg='Файл успешно сохранен')
     return RedirectResponse(redirect_url, status_code=status.HTTP_302_FOUND)
-
-
-
-# test = CascadeHaara('classifier/haarcascade_frontalface_alt.xml')
-# test.load_image('image_for_test/face1.jpg')
-# test.return_result()
 
 
 if __name__== "__main__":

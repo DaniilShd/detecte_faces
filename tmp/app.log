@@ -239,3 +239,81 @@
 2025-01-26 21:44:41.387 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
 2025-01-26 21:44:41.534 | INFO     | __main__:<module>:17 - Start logging
 2025-01-26 21:44:57.581 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
+2025-01-26 22:34:54.500 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
+2025-01-26 22:34:54.968 | INFO     | __main__:<module>:17 - Start logging
+2025-01-26 22:35:12.457 | INFO     | __main__:load_data_local:81 - Отображение страницы с формой
+2025-01-26 22:37:01.385 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
+2025-01-26 22:37:01.531 | INFO     | __main__:<module>:17 - Start logging
+2025-01-26 22:37:09.822 | INFO     | __main__:load_data_local:81 - Отображение страницы с формой
+2025-01-26 22:37:14.262 | INFO     | __main__:load_data_local:81 - Отображение страницы с формой
+2025-01-26 22:37:29.481 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
+2025-01-26 22:37:29.621 | INFO     | __main__:<module>:17 - Start logging
+2025-01-26 22:37:31.769 | INFO     | __main__:load_data_local:81 - Отображение страницы с формой
+2025-01-26 22:37:45.513 | INFO     | __main__:load_data_local:81 - Отображение страницы с формой
+2025-01-26 22:37:50.104 | INFO     | __main__:load_data_local:81 - Отображение страницы с формой
+2025-01-27 20:12:29.111 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
+2025-01-27 20:12:29.584 | INFO     | __main__:<module>:17 - Start logging
+2025-01-27 20:12:44.494 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
+2025-01-27 20:15:56.320 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
+2025-01-27 20:15:56.469 | INFO     | __main__:<module>:17 - Start logging
+2025-01-27 20:16:00.776 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
+2025-01-27 20:16:03.481 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
+2025-01-27 20:23:04.619 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
+2025-01-27 20:23:04.756 | INFO     | __main__:<module>:17 - Start logging
+2025-01-27 20:23:35.743 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
+2025-01-27 20:23:35.846 | INFO     | __main__:<module>:17 - Start logging
+2025-01-27 20:23:51.769 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
+2025-01-27 20:36:50.675 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:37:28.159 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:37:39.558 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:37:39.700 | INFO     | __main__:<module>:20 - Start logging
+2025-01-27 20:38:05.659 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:38:05.795 | INFO     | __main__:<module>:20 - Start logging
+2025-01-27 20:38:14.831 | INFO     | __main__:load_data_local:74 - Отображение страницы с формой
+2025-01-27 20:38:21.902 | INFO     | __main__:load_data_local:74 - Отображение страницы с формой
+2025-01-27 20:38:47.823 | INFO     | __main__:load_data_local:74 - Отображение страницы с формой
+2025-01-27 20:44:17.339 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:44:17.494 | INFO     | __main__:<module>:20 - Start logging
+2025-01-27 20:44:22.694 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
+2025-01-27 20:44:52.598 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:44:52.748 | INFO     | __main__:<module>:20 - Start logging
+2025-01-27 20:45:00.660 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
+2025-01-27 20:46:47.805 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:46:47.959 | INFO     | __main__:<module>:20 - Start logging
+2025-01-27 20:46:59.927 | INFO     | __main__:load_data_local:76 - Отображение страницы с формой
+2025-01-27 20:47:59.722 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:47:59.861 | INFO     | __main__:<module>:20 - Start logging
+2025-01-27 20:48:09.221 | INFO     | __main__:load_data_local:76 - Отображение страницы с формой
+2025-01-27 20:48:25.533 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:48:25.680 | INFO     | __main__:<module>:20 - Start logging
+2025-01-27 20:48:32.572 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:48:32.712 | INFO     | __main__:<module>:20 - Start logging
+2025-01-27 20:48:40.699 | INFO     | __main__:load_data_local:76 - Отображение страницы с формой
+2025-01-27 20:49:10.375 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:49:10.520 | INFO     | __main__:<module>:20 - Start logging
+2025-01-27 20:50:21.153 | INFO     | __main__:load_data_local:76 - Отображение страницы с формой
+2025-01-27 20:50:54.048 | INFO     | __main__:load_data_local:76 - Отображение страницы с формой
+2025-01-27 20:52:29.547 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:52:29.687 | INFO     | __main__:<module>:19 - Start logging
+2025-01-27 20:52:37.198 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
+2025-01-27 20:53:32.713 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:53:32.851 | INFO     | __main__:<module>:19 - Start logging
+2025-01-27 20:53:49.737 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
+2025-01-27 20:54:10.573 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
+2025-01-27 20:54:27.419 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:54:27.558 | INFO     | __main__:<module>:19 - Start logging
+2025-01-27 20:54:35.693 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
+2025-01-27 20:56:22.685 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:56:22.857 | INFO     | __main__:<module>:19 - Start logging
+2025-01-27 20:58:10.920 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:58:11.058 | INFO     | __main__:<module>:19 - Start logging
+2025-01-27 20:58:42.136 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 20:58:42.278 | INFO     | __main__:<module>:19 - Start logging
+2025-01-27 21:00:54.307 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 21:00:54.772 | INFO     | __main__:<module>:19 - Start logging
+2025-01-27 21:01:00.518 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
+2025-01-27 21:01:07.361 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
+2025-01-27 21:01:12.526 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
+2025-01-27 21:01:33.941 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 21:01:34.138 | INFO     | __main__:<module>:19 - Start logging
+2025-01-27 21:01:42.857 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой

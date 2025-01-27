@@ -1,7 +1,7 @@
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import Session
 from logger.my_logger import logger
-from repository.models import Base, Person
+from repository.models import Base, Video
 
 # Создание локальной базы данных
 engine = create_engine("sqlite:///example.db", echo=True)
@@ -18,7 +18,5 @@ Base.metadata.create_all(bind=engine)
 #     db.add(alex)  # добавляем в бд
 #     db.commit()  # сохраняем изменения
 #     print(daniil.id)  # можно получить установленный id
-
-db = Session(autoflush=False, bind=engine)
 
 logger.info("Таблица базы данных готова")

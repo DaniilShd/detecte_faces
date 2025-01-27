@@ -12,9 +12,10 @@ class Person(Base):
     password = Column(String)
 
 class Video(Base):
-    __tablename__ = "video_detecte"
+    __tablename__ = "video_detected"
 
     id = Column(Integer, primary_key=True, index=True)
     filename = Column(String)
-    video_path = Column(String)
+    video_path_origin = Column(String)
+    video_path_detected = Column(String)
     author = Column(String)
