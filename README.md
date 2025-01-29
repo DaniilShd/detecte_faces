@@ -8,3 +8,5 @@ Daniil
 
 ![изображение](https://github.com/user-attachments/assets/b94c4673-590d-4995-a1e0-8f5e55800166)
 
+Пока не использован pydantic и нет тестов. 
+
