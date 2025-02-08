@@ -27,7 +27,6 @@ pip install -r requirements.txt
 Шаг 3: Запуск приложения
 
 ```sh
-cd app
-python main.py
+python app/main.py
 ```
 
