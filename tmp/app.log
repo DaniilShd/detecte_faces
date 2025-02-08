@@ -1,319 +1,72 @@
-2025-01-26 09:52:30.851 | INFO     | __main__:<module>:14 - Start logging
-2025-01-26 09:52:34.533 | INFO     | __main__:load_data_local:33 - Отображение страницы с формой
-2025-01-26 09:52:39.543 | INFO     | __main__:fetch_data_local:38 - Название файла IMG20231106105604.jpg
-2025-01-26 10:13:08.471 | INFO     | __main__:<module>:14 - Start logging
-2025-01-26 10:13:24.171 | INFO     | __main__:load_data_local:33 - Отображение страницы с формой
-2025-01-26 10:13:27.219 | INFO     | __main__:fetch_data_local:38 - Название файла IMG20231106105604.jpg
-2025-01-26 10:17:51.545 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:35:05.337 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:35:38.370 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:35:46.507 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:37:25.394 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:37:37.063 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:39:08.221 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:39:08.337 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:39:34.870 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:39:35.189 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:41:10.010 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:41:10.294 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:41:41.145 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:43:48.991 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:43:50.116 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:43:52.947 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:44:37.679 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:44:38.572 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:45:01.962 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:45:02.446 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:46:08.698 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:46:30.757 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:48:05.604 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:48:14.650 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:54:51.232 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:55:09.225 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:55:11.186 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:55:18.421 | INFO     | __main__:fetch_data_local:50 - Название файла IMG20231106105604.jpg
-2025-01-26 10:55:18.421 | INFO     | __main__:fetch_data_local:51 - Введеное имя 12234
-2025-01-26 10:56:54.870 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:56:58.031 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:57:00.266 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:57:02.897 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:57:19.856 | INFO     | __main__:fetch_data_local:51 - Название файла abstract-windows-11-green.jpg
-2025-01-26 10:57:19.856 | INFO     | __main__:fetch_data_local:52 - Введеное имя ergerg
-2025-01-26 10:57:22.189 | INFO     | __main__:fetch_data_local:51 - Название файла 
-2025-01-26 10:57:22.189 | INFO     | __main__:fetch_data_local:52 - Введеное имя dfb
-2025-01-26 10:58:30.885 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 10:58:36.070 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 10:58:41.058 | INFO     | __main__:fetch_data_local:51 - Название файла IMG20231106105604.jpg
-2025-01-26 10:58:41.058 | INFO     | __main__:fetch_data_local:52 - Введеное имя hgjg
-2025-01-26 11:10:36.799 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:10:45.709 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:10:51.133 | INFO     | __main__:fetch_data_local:51 - Название файла IMG20231106105604.jpg
-2025-01-26 11:10:51.133 | INFO     | __main__:fetch_data_local:52 - Введеное имя hgjg
-2025-01-26 11:11:08.571 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:11:11.626 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:11:16.524 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:11:30.199 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:11:31.159 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:14:03.968 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:14:11.518 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:14:14.176 | INFO     | __main__:fetch_data_local:51 - Название файла 
-2025-01-26 11:14:14.176 | INFO     | __main__:fetch_data_local:52 - Введеное имя user
-2025-01-26 11:14:18.230 | INFO     | __main__:fetch_data_local:51 - Название файла 
-2025-01-26 11:14:18.230 | INFO     | __main__:fetch_data_local:52 - Введеное имя sdfwer
-2025-01-26 11:20:25.786 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:21:09.479 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:21:35.805 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:21:41.772 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:22:20.156 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:24:09.618 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:24:16.085 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:24:52.709 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:24:54.760 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:26:03.666 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:26:07.599 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:26:58.968 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:27:01.385 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:27:02.826 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:27:44.725 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:27:46.473 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:32:11.788 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:32:13.062 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:32:18.674 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:32:21.644 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:32:41.391 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:35:42.737 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:35:43.714 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:36:35.923 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:37:03.776 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:37:05.223 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:37:37.948 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:37:42.813 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:38:03.080 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:38:07.250 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:38:40.471 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:38:43.318 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:39:06.533 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:39:12.654 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:39:13.387 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:39:25.657 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:39:32.425 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:40:30.744 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:40:32.641 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:40:34.151 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:41:03.442 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:42:24.915 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:42:26.774 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:42:43.699 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:42:45.099 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:49:25.393 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:49:28.163 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:49:29.356 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 11:55:27.499 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:58:49.393 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 11:58:55.054 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:01:20.504 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 12:01:23.367 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:01:36.469 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:01:38.470 | INFO     | __main__:fetch_data_local:56 - Название файла 
-2025-01-26 12:01:38.470 | INFO     | __main__:fetch_data_local:57 - Введеное имя 
-2025-01-26 12:02:07.077 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 12:02:09.697 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:02:10.379 | INFO     | __main__:fetch_data_local:56 - Название файла 
-2025-01-26 12:02:10.379 | INFO     | __main__:fetch_data_local:57 - Введеное имя 
-2025-01-26 12:02:13.466 | INFO     | __main__:fetch_data_local:56 - Название файла 
-2025-01-26 12:02:13.466 | INFO     | __main__:fetch_data_local:57 - Введеное имя 
-2025-01-26 12:02:17.136 | INFO     | __main__:fetch_data_local:56 - Название файла 
-2025-01-26 12:02:17.136 | INFO     | __main__:fetch_data_local:57 - Введеное имя 
-2025-01-26 12:02:18.742 | INFO     | __main__:fetch_data_local:56 - Название файла 
-2025-01-26 12:02:18.742 | INFO     | __main__:fetch_data_local:57 - Введеное имя 
-2025-01-26 12:09:06.580 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 12:13:34.222 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 12:13:37.556 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:13:38.665 | INFO     | __main__:fetch_data_local:59 - Название файла 
-2025-01-26 12:13:38.665 | INFO     | __main__:fetch_data_local:60 - Введеное имя 
-2025-01-26 12:13:38.675 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:14:28.601 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 12:14:31.830 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:14:33.011 | INFO     | __main__:fetch_data_local:59 - Название файла 
-2025-01-26 12:14:33.011 | INFO     | __main__:fetch_data_local:60 - Введеное имя 
-2025-01-26 12:14:33.020 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:40:58.574 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 12:41:01.805 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:41:37.281 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 12:41:37.756 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:41:39.687 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:41:55.899 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 12:53:46.473 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:53:49.380 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:54:19.945 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 12:54:20.776 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:54:22.384 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:54:50.308 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 12:54:50.636 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:54:51.552 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:54:56.086 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:57:35.626 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 12:57:37.520 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:57:38.402 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:57:44.582 | ERROR    | __main__:fetch_data_local:56 - Необходимо загрузить файл в формате mp4
-2025-01-26 12:57:44.588 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:58:21.663 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 12:58:24.948 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:58:41.749 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 12:58:42.259 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:58:43.975 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:58:47.483 | ERROR    | __main__:fetch_data_local:52 - Необходимо загрузить файл в формате mp4
-2025-01-26 12:58:47.489 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 12:58:57.580 | INFO     | __main__:load_data_local:35 - Отображение страницы с формой
-2025-01-26 13:18:35.664 | INFO     | __main__:<module>:19 - Start logging
-2025-01-26 13:20:31.297 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 13:20:41.446 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 13:21:26.860 | INFO     | __main__:<module>:19 - Start logging
-2025-01-26 13:21:31.050 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 13:22:04.658 | INFO     | __main__:<module>:19 - Start logging
-2025-01-26 13:22:04.941 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 13:22:10.181 | INFO     | __main__:<module>:19 - Start logging
-2025-01-26 13:22:12.447 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 13:39:21.865 | INFO     | __main__:<module>:19 - Start logging
-2025-01-26 13:42:48.704 | INFO     | __main__:<module>:19 - Start logging
-2025-01-26 13:42:51.936 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 13:42:56.052 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 13:43:02.410 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 13:43:45.878 | INFO     | __main__:<module>:19 - Start logging
-2025-01-26 13:45:20.773 | INFO     | __main__:<module>:19 - Start logging
-2025-01-26 13:45:26.752 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 13:45:29.748 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 13:46:05.167 | INFO     | __main__:<module>:19 - Start logging
-2025-01-26 13:46:06.839 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 14:29:51.664 | INFO     | __main__:<module>:19 - Start logging
-2025-01-26 17:22:08.104 | INFO     | __main__:<module>:19 - Start logging
-2025-01-26 17:22:21.252 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 17:23:02.734 | INFO     | __main__:<module>:19 - Start logging
-2025-01-26 17:23:04.307 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 17:23:05.290 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 17:23:37.007 | INFO     | __main__:<module>:19 - Start logging
-2025-01-26 17:24:42.504 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 17:24:46.276 | INFO     | __main__:load_data_local:38 - Отображение страницы с формой
-2025-01-26 20:28:32.800 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 20:28:46.878 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 20:29:47.935 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 20:29:55.100 | INFO     | __main__:load_data_local:72 - Отображение страницы с формой
-2025-01-26 20:30:41.824 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 20:30:47.169 | INFO     | __main__:load_data_local:74 - Отображение страницы с формой
-2025-01-26 20:33:03.956 | INFO     | repository.sqlite:<module>:17 - Таблица бащы данных готова
-2025-01-26 20:33:04.151 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 20:33:30.679 | INFO     | __main__:load_data_local:76 - Отображение страницы с формой
-2025-01-26 20:34:35.849 | INFO     | repository.sqlite:<module>:25 - Таблица базы данных готова
-2025-01-26 20:34:35.990 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 20:34:38.046 | INFO     | repository.sqlite:<module>:25 - Таблица базы данных готова
-2025-01-26 20:34:38.216 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 20:35:30.351 | INFO     | repository.sqlite:<module>:25 - Таблица базы данных готова
-2025-01-26 20:35:30.492 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 20:36:13.510 | INFO     | __main__:load_data_local:76 - Отображение страницы с формой
-2025-01-26 20:41:17.845 | INFO     | repository.sqlite:<module>:34 - Таблица базы данных готова
-2025-01-26 20:41:17.989 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 20:41:29.507 | INFO     | repository.sqlite:<module>:34 - Таблица базы данных готова
-2025-01-26 20:41:29.641 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 20:52:49.887 | INFO     | repository.sqlite:<module>:34 - Таблица базы данных готова
-2025-01-26 20:52:50.505 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 20:55:54.567 | INFO     | repository.sqlite:<module>:36 - Таблица базы данных готова
-2025-01-26 20:55:54.711 | INFO     | __main__:<module>:16 - Start logging
-2025-01-26 21:02:37.522 | INFO     | repository.sqlite:<module>:37 - Таблица базы данных готова
-2025-01-26 21:02:37.660 | INFO     | __main__:<module>:17 - Start logging
-2025-01-26 21:03:41.822 | INFO     | repository.sqlite:<module>:37 - Таблица базы данных готова
-2025-01-26 21:03:41.967 | INFO     | __main__:<module>:17 - Start logging
-2025-01-26 21:22:17.436 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-26 21:22:17.590 | INFO     | __main__:<module>:17 - Start logging
-2025-01-26 21:35:14.683 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-26 21:35:14.827 | INFO     | __main__:<module>:17 - Start logging
-2025-01-26 21:37:36.500 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-26 21:37:36.640 | INFO     | __main__:<module>:17 - Start logging
-2025-01-26 21:37:38.590 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-26 21:37:38.736 | INFO     | __main__:<module>:17 - Start logging
-2025-01-26 21:38:22.732 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-26 21:38:22.870 | INFO     | __main__:<module>:17 - Start logging
-2025-01-26 21:39:02.771 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-26 21:39:02.912 | INFO     | __main__:<module>:17 - Start logging
-2025-01-26 21:39:29.436 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-26 21:39:29.577 | INFO     | __main__:<module>:17 - Start logging
-2025-01-26 21:44:41.387 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-26 21:44:41.534 | INFO     | __main__:<module>:17 - Start logging
-2025-01-26 21:44:57.581 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
-2025-01-26 22:34:54.500 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-26 22:34:54.968 | INFO     | __main__:<module>:17 - Start logging
-2025-01-26 22:35:12.457 | INFO     | __main__:load_data_local:81 - Отображение страницы с формой
-2025-01-26 22:37:01.385 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-26 22:37:01.531 | INFO     | __main__:<module>:17 - Start logging
-2025-01-26 22:37:09.822 | INFO     | __main__:load_data_local:81 - Отображение страницы с формой
-2025-01-26 22:37:14.262 | INFO     | __main__:load_data_local:81 - Отображение страницы с формой
-2025-01-26 22:37:29.481 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-26 22:37:29.621 | INFO     | __main__:<module>:17 - Start logging
-2025-01-26 22:37:31.769 | INFO     | __main__:load_data_local:81 - Отображение страницы с формой
-2025-01-26 22:37:45.513 | INFO     | __main__:load_data_local:81 - Отображение страницы с формой
-2025-01-26 22:37:50.104 | INFO     | __main__:load_data_local:81 - Отображение страницы с формой
-2025-01-27 20:12:29.111 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-27 20:12:29.584 | INFO     | __main__:<module>:17 - Start logging
-2025-01-27 20:12:44.494 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
-2025-01-27 20:15:56.320 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-27 20:15:56.469 | INFO     | __main__:<module>:17 - Start logging
-2025-01-27 20:16:00.776 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
-2025-01-27 20:16:03.481 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
-2025-01-27 20:23:04.619 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-27 20:23:04.756 | INFO     | __main__:<module>:17 - Start logging
-2025-01-27 20:23:35.743 | INFO     | repository.sqlite:<module>:24 - Таблица базы данных готова
-2025-01-27 20:23:35.846 | INFO     | __main__:<module>:17 - Start logging
-2025-01-27 20:23:51.769 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
-2025-01-27 20:36:50.675 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:37:28.159 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:37:39.558 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:37:39.700 | INFO     | __main__:<module>:20 - Start logging
-2025-01-27 20:38:05.659 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:38:05.795 | INFO     | __main__:<module>:20 - Start logging
-2025-01-27 20:38:14.831 | INFO     | __main__:load_data_local:74 - Отображение страницы с формой
-2025-01-27 20:38:21.902 | INFO     | __main__:load_data_local:74 - Отображение страницы с формой
-2025-01-27 20:38:47.823 | INFO     | __main__:load_data_local:74 - Отображение страницы с формой
-2025-01-27 20:44:17.339 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:44:17.494 | INFO     | __main__:<module>:20 - Start logging
-2025-01-27 20:44:22.694 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
-2025-01-27 20:44:52.598 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:44:52.748 | INFO     | __main__:<module>:20 - Start logging
-2025-01-27 20:45:00.660 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
-2025-01-27 20:46:47.805 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:46:47.959 | INFO     | __main__:<module>:20 - Start logging
-2025-01-27 20:46:59.927 | INFO     | __main__:load_data_local:76 - Отображение страницы с формой
-2025-01-27 20:47:59.722 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:47:59.861 | INFO     | __main__:<module>:20 - Start logging
-2025-01-27 20:48:09.221 | INFO     | __main__:load_data_local:76 - Отображение страницы с формой
-2025-01-27 20:48:25.533 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:48:25.680 | INFO     | __main__:<module>:20 - Start logging
-2025-01-27 20:48:32.572 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:48:32.712 | INFO     | __main__:<module>:20 - Start logging
-2025-01-27 20:48:40.699 | INFO     | __main__:load_data_local:76 - Отображение страницы с формой
-2025-01-27 20:49:10.375 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:49:10.520 | INFO     | __main__:<module>:20 - Start logging
-2025-01-27 20:50:21.153 | INFO     | __main__:load_data_local:76 - Отображение страницы с формой
-2025-01-27 20:50:54.048 | INFO     | __main__:load_data_local:76 - Отображение страницы с формой
-2025-01-27 20:52:29.547 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:52:29.687 | INFO     | __main__:<module>:19 - Start logging
-2025-01-27 20:52:37.198 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
-2025-01-27 20:53:32.713 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:53:32.851 | INFO     | __main__:<module>:19 - Start logging
-2025-01-27 20:53:49.737 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
-2025-01-27 20:54:10.573 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
-2025-01-27 20:54:27.419 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:54:27.558 | INFO     | __main__:<module>:19 - Start logging
-2025-01-27 20:54:35.693 | INFO     | __main__:load_data_local:79 - Отображение страницы с формой
-2025-01-27 20:56:22.685 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:56:22.857 | INFO     | __main__:<module>:19 - Start logging
-2025-01-27 20:58:10.920 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:58:11.058 | INFO     | __main__:<module>:19 - Start logging
-2025-01-27 20:58:42.136 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 20:58:42.278 | INFO     | __main__:<module>:19 - Start logging
-2025-01-27 21:00:54.307 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 21:00:54.772 | INFO     | __main__:<module>:19 - Start logging
-2025-01-27 21:01:00.518 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
-2025-01-27 21:01:07.361 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
-2025-01-27 21:01:12.526 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
-2025-01-27 21:01:33.941 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
-2025-01-27 21:01:34.138 | INFO     | __main__:<module>:19 - Start logging
-2025-01-27 21:01:42.857 | INFO     | __main__:load_data_local:77 - Отображение страницы с формой
+2025-01-27 23:19:47.571 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 23:19:47.632 | INFO     | __main__:<module>:20 - Start logging
+2025-01-27 23:20:01.714 | INFO     | __main__:load_data_local:85 - Отображение страницы с формой
+2025-01-27 23:20:46.355 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 23:20:46.398 | INFO     | __main__:<module>:20 - Start logging
+2025-01-27 23:21:01.915 | INFO     | __main__:load_data_local:85 - Отображение страницы с формой
+2025-01-27 23:23:47.207 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 23:23:47.258 | INFO     | __main__:<module>:20 - Start logging
+2025-01-27 23:23:55.988 | INFO     | __main__:load_data_local:85 - Отображение страницы с формой
+2025-01-27 23:25:21.904 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-27 23:25:21.945 | INFO     | __main__:<module>:20 - Start logging
+2025-01-27 23:25:31.444 | INFO     | __main__:load_data_local:85 - Отображение страницы с формой
+2025-01-27 23:25:37.367 | INFO     | __main__:load_data_local:85 - Отображение страницы с формой
+2025-01-28 23:04:05.395 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:04:05.478 | INFO     | __main__:<module>:20 - Start logging
+2025-01-28 23:04:27.078 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:04:27.122 | INFO     | __main__:<module>:20 - Start logging
+2025-01-28 23:04:49.421 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:04:49.462 | INFO     | __main__:<module>:20 - Start logging
+2025-01-28 23:05:48.187 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:05:48.227 | INFO     | __main__:<module>:20 - Start logging
+2025-01-28 23:06:11.383 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:06:11.423 | INFO     | __main__:<module>:20 - Start logging
+2025-01-28 23:07:56.419 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:07:56.461 | INFO     | __main__:<module>:20 - Start logging
+2025-01-28 23:08:44.437 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:08:44.477 | INFO     | __main__:<module>:20 - Start logging
+2025-01-28 23:11:13.018 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:11:13.059 | INFO     | __main__:<module>:20 - Start logging
+2025-01-28 23:12:53.664 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:12:53.705 | INFO     | __main__:<module>:18 - Start logging
+2025-01-28 23:16:11.614 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:16:11.654 | INFO     | __main__:<module>:18 - Start logging
+2025-01-28 23:19:11.186 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:19:11.229 | INFO     | __main__:<module>:18 - Start logging
+2025-01-28 23:22:33.815 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:22:34.520 | INFO     | __main__:<module>:19 - Start logging
+2025-01-28 23:23:35.792 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:23:36.129 | INFO     | __main__:<module>:19 - Start logging
+2025-01-28 23:24:28.695 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:24:29.054 | INFO     | __main__:<module>:19 - Start logging
+2025-01-28 23:24:50.594 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:32:07.683 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:32:08.052 | INFO     | __main__:<module>:19 - Start logging
+2025-01-28 23:32:19.382 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:36:10.771 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:36:11.056 | INFO     | __main__:<module>:19 - Start logging
+2025-01-28 23:36:27.930 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:40:24.619 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:40:24.982 | INFO     | __main__:<module>:19 - Start logging
+2025-01-28 23:40:40.585 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:44:17.784 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:44:18.133 | INFO     | __main__:<module>:19 - Start logging
+2025-01-28 23:44:31.646 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:45:00.012 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:45:00.392 | INFO     | __main__:<module>:19 - Start logging
+2025-01-28 23:45:08.327 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:47:59.626 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:48:15.982 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:48:35.366 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-01-28 23:48:35.752 | INFO     | __main__:<module>:19 - Start logging
+2025-01-28 23:49:24.085 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:49:25.571 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:49:26.682 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:50:21.668 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:51:14.192 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:51:16.345 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:51:18.729 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:51:37.108 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-01-28 23:51:38.821 | INFO     | __main__:load_data_local:103 - Отображение страницы с формой
+2025-02-08 15:11:39.611 | INFO     | repository.sqlite:<module>:22 - Таблица базы данных готова
+2025-02-08 15:11:41.694 | INFO     | __main__:<module>:19 - Start logging

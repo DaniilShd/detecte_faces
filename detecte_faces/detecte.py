@@ -8,11 +8,9 @@ class CascadeHaara():
         self.face_cascade = cv.CascadeClassifier(path_classifier)
         self.__image = None
 
-    def load_image(self, path_image):
-        # Чтение изображения
-        image = cv.imread(path_image)
+    def load_image(self, origin_image):
         # Конвертация изображения в градации серого
-        self.__image = cv.cvtColor(image, cv.COLOR_BGR2RGB)
+        self.__image = cv.cvtColor(origin_image, cv.COLOR_BGR2RGB)
         grayscale_image = cv.cvtColor(self.__image, cv.COLOR_RGB2GRAY)
 
         # Детектирование лиц на изображении с помощью предобученной модели
@@ -29,9 +27,5 @@ class CascadeHaara():
             )
 
     def return_result(self):
-        plt.figure(figsize=(10, 10))
-        plt.title(f"Количество задетектированных лиц")
-        plt.imshow(self.__image)
-        plt.show()
         return self.__image
 
