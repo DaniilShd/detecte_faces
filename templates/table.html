@@ -17,9 +17,14 @@
   <tbody>
     {% for row in data %}
     <tr>
-      {% for col in cols %}
-      <td>{{ row[col] }}</td>
-      {% endfor %}
+<!--      {% for col in cols %}-->
+<!--      <td>{{ row[col] }}</td>-->
+<!--      {% endfor %}-->
+      <td>{{ row['id'] }}</td>
+      <td>{{ row['filename'] }}</td>
+      <td><a href="/download_origin/{{ row['video_path_origin'] }}">Скачать</a></td>
+      <td><a href="/download_detected/{{ row['video_path_origin'] }}">Скачать</a></td>
+      <td>{{ row['author'] }}</td>
     </tr>
     {% endfor %}
   </tbody>

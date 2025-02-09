@@ -1,5 +1,6 @@
 import sys
 import os
+from fileinput import filename
 
 # Добавляем корневую директорию проекта в sys.path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -7,7 +8,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import uuid
 from detecte_faces.video_processing import detected_faces
-from fastapi.responses import HTMLResponse, RedirectResponse
+from fastapi.responses import HTMLResponse, RedirectResponse, FileResponse
 from fastapi.templating import Jinja2Templates
 from repository.models import Video, Person
 from repository.sqlite import engine
@@ -86,6 +87,7 @@ def show_data(request: Request,
     with Session(autoflush=False, bind=engine) as db:
         data = db.execute(text("SELECT * FROM video_detected"))
         columns = data.keys()
+        print(columns)
         rows = data.fetchall()  # получаем данные
     df = pd.DataFrame(rows, columns=columns)
     # print(df.to_dict(orient="records"))
@@ -99,6 +101,14 @@ def show_data(request: Request,
             "cols": list(df.columns),
         }
     )
+
+@app.get("/download_origin/{uuid_video}")
+def download_file(uuid_video: str):
+  return FileResponse(path=f'../repository/origin_video/{uuid_video}', filename='origin.mp4', media_type='multipart/form-data')
+
+@app.get("/download_detected/{uuid_video}")
+def download_file(uuid_video: str):
+  return FileResponse(path=f'../repository/detected_video/{uuid_video}', filename='detected_faces.mp4', media_type='multipart/form-data')
 
 # -------------------- Загрузка локального файла --------------------
 @app.get("/load_data_local", response_class=HTMLResponse)
@@ -148,7 +158,7 @@ async def fetch_data_local(request: Request,
         contents = await file.read()
 
         # Создаю уникальное название для видеофайла
-        uniq_name_video = f'{uuid.uuid4()}.mp4'
+        uniq_name_video = f'{uuid.uuid4()}'
 
         # Записываю файл в mp4 формат
         with open(f'../repository/origin_video/{uniq_name_video}.mp4', 'wb') as f:
@@ -162,8 +172,9 @@ async def fetch_data_local(request: Request,
         # Сохранение в базе данных пути к файлам и имя автора
         with Session(autoflush=False, bind=engine) as db:
             # создаем объект Video для добавления в бд
-            new_video = Video(video_path_origin=f"/repository/origin_video/{uniq_name_video}.mp4",
-                              video_path_detected=f"/repository/detected_video/{uniq_name_video}.mp4",
+            new_video = Video(filename=file.filename,
+                            video_path_origin=f"{uniq_name_video}.mp4",
+                              video_path_detected=f"{uniq_name_video}.mp4",
                               author=username)
             db.add(new_video)  # добавляем в бд
             db.commit()  # сохраняем изменения
