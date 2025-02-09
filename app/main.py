@@ -3,6 +3,7 @@ import os
 
 # Добавляем корневую директорию проекта в sys.path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+# print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import uuid
 from detecte_faces.video_processing import detected_faces
@@ -31,6 +32,8 @@ templates = Jinja2Templates(directory="../templates")
 with Session(autoflush=False, bind=engine) as db:
     users = db.query(Person).all()
 
+print(users)
+
 # Секретный ключ для подписи cookies
 SECRET_KEY = "your-secret-key"
 serializer = URLSafeSerializer(SECRET_KEY)
@@ -53,6 +56,7 @@ async def login(request: Request, username: str = Form(...), password: str = For
     # Проверяем, существует ли пользователь в базе данных
     for user in users:
         if user.login == username and user.password == password:
+            print(user.login)
             # Создаем сессию (подписанный токен)
             session_token = serializer.dumps({"username": username})
             response.set_cookie(key="session_token", value=session_token, httponly=True)
@@ -84,8 +88,8 @@ def show_data(request: Request,
         columns = data.keys()
         rows = data.fetchall()  # получаем данные
     df = pd.DataFrame(rows, columns=columns)
-    print(df.to_dict(orient="records"))
-    print(list(df.columns))
+    # print(df.to_dict(orient="records"))
+    # print(list(df.columns))
 
     return templates.TemplateResponse(
         "table.html",
