@@ -90,8 +90,6 @@ def show_data(request: Request,
         print(columns)
         rows = data.fetchall()  # получаем данные
     df = pd.DataFrame(rows, columns=columns)
-    # print(df.to_dict(orient="records"))
-    # print(list(df.columns))
 
     return templates.TemplateResponse(
         "table.html",
@@ -103,12 +101,44 @@ def show_data(request: Request,
     )
 
 @app.get("/download_origin/{uuid_video}")
-def download_file(uuid_video: str):
-  return FileResponse(path=f'../repository/origin_video/{uuid_video}', filename='origin.mp4', media_type='multipart/form-data')
+def download_origin_video(uuid_video: str, request: Request,
+              session_token: str = Cookie(None)):
+    if session_token not in lst_tokens:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Not authenticated",
+        )
+    return FileResponse(path=f'../repository/origin_video/{uuid_video}', filename='origin.mp4', media_type='multipart/form-data')
 
 @app.get("/download_detected/{uuid_video}")
-def download_file(uuid_video: str):
-  return FileResponse(path=f'../repository/detected_video/{uuid_video}', filename='detected_faces.mp4', media_type='multipart/form-data')
+def download_detected_video(uuid_video: str, request: Request,
+              session_token: str = Cookie(None)):
+    if session_token not in lst_tokens:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Not authenticated",
+        )
+    return FileResponse(path=f'../repository/detected_video/{uuid_video}', filename='detected_faces.mp4', media_type='multipart/form-data')
+
+
+@app.get("/delete/{uuid_video}")
+def delete_video(uuid_video: str, response: Response,
+              session_token: str = Cookie(None)):
+    if session_token not in lst_tokens:
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Not authenticated",
+        )
+
+    #Удаляю запись из базы данных
+    with Session(autoflush=False, bind=engine) as db:
+        db.execute(text(f"DELETE FROM `video_detected` WHERE `video_path_origin` = '{uuid_video}'"))
+        db.commit()  # сохраняем изменения
+
+    os.remove(f"../repository/origin_video/{uuid_video}")
+    os.remove(f"../repository/detected_video/{uuid_video}")
+
+    return RedirectResponse('/show_data', status_code=status.HTTP_301_MOVED_PERMANENTLY, headers=response.headers)
 
 # -------------------- Загрузка локального файла --------------------
 @app.get("/load_data_local", response_class=HTMLResponse)
