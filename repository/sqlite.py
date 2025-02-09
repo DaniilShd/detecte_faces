@@ -1,10 +1,19 @@
 from sqlalchemy import create_engine, text
 from sqlalchemy.orm import Session
 from logger.my_logger import logger
-from repository.models import Base, Video
+from repository.models import Base, Video, Person
 
-# Создание локальной базы данных
-engine = create_engine("sqlite:///example.db", echo=True)
+import sys
+import os
+
+# Получаем абсолютный путь к корневой папке проекта
+base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Указываем путь к базе данных
+db_path = os.path.join(base_dir, 'app', 'example.db')
+
+# Создаем движок SQLAlchemy
+engine = create_engine(f'sqlite:///{db_path}')
 
 # создаем таблицы
 Base.metadata.create_all(bind=engine)
