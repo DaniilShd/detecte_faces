@@ -19,13 +19,13 @@ engine = create_engine(f'sqlite:///{db_path}')
 Base.metadata.create_all(bind=engine)
 
 # создаем сессию подключения к бд. Добавляю данные пользователей в БД
-with Session(autoflush=False, bind=engine) as db:
-    # создаем объект Person для добавления в бд
-    daniil = Person(login="Daniil", password='1234')
-    alex = Person(login="Alex", password='4321')
-    db.add(daniil)  # добавляем в бд
-    db.add(alex)  # добавляем в бд
-    db.commit()  # сохраняем изменения
-    print(daniil.id)  # можно получить установленный id
+# with Session(autoflush=False, bind=engine) as db:
+#     # создаем объект Person для добавления в бд
+#     daniil = Person(login="Daniil", password='1234')
+#     alex = Person(login="Alex", password='4321')
+#     db.add(daniil)  # добавляем в бд
+#     db.add(alex)  # добавляем в бд
+#     db.commit()  # сохраняем изменения
+#     print(daniil.id)  # можно получить установленный id
 
 logger.info("Таблица базы данных готова")

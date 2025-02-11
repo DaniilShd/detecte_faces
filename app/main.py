@@ -4,7 +4,6 @@ from fileinput import filename
 
 # Добавляем корневую директорию проекта в sys.path
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-# print(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 import uuid
 from detecte_faces.video_processing import detected_faces
@@ -68,7 +67,8 @@ async def login(request: Request, username: str = Form(...), password: str = For
     return templates.TemplateResponse("login.html", {
         "request": request,
         'info': 'Incorrect username or password',
-    })
+    },
+        status_code=status.HTTP_401_UNAUTHORIZED)
 
 # Маршрут для выхода пользователя
 @app.get("/logout")
