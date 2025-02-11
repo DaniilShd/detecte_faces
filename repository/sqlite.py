@@ -29,3 +29,4 @@ Base.metadata.create_all(bind=engine)
 #     print(daniil.id)  # можно получить установленный id
 
 logger.info("Таблица базы данных готова")
+

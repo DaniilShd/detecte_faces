@@ -11,7 +11,7 @@ client = TestClient(app)
 UPLOAD_URL = "http://example.com/upload"  # Замените на реальный URL
 
 # Путь к тестовому видеофайлу
-TEST_VIDEO_PATH = "test_video/test.mp4"  # Убедитесь, что файл существует
+TEST_VIDEO_PATH = "test_video/test2.mp4"  # Убедитесь, что файл существует
 
 @pytest.fixture(scope="module")
 def test_client():
@@ -94,3 +94,4 @@ def test_login_failure():
 #     assert redirect_response.status_code == 200, f"Ожидался статус-код 200, получен {redirect_response.status_code}"
 #
 #     print(f"Файл успешно загружен")
+

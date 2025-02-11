@@ -19,3 +19,4 @@ class Video(Base):
     video_path_origin = Column(String)
     video_path_detected = Column(String)
     author = Column(String)
+
