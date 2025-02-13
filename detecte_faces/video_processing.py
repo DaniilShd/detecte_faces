@@ -91,4 +91,4 @@ def frames_to_video(list_frames, output_path, fps=30, reverse=False):
 
 if __name__ == '__main__':
     # Test frame extraction
-    detected_faces(video_path='../repository/origin_video/test_3.mp4', output_path='../repository/detected_video/test2.mp4',  every=5, chunk_size=1000)
+    detected_faces(video_path='../repository/origin_video/test_3.mp4', output_path='../repository/detected_video/test.mp4',  every=5, chunk_size=1000)
